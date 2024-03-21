@@ -26,16 +26,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://lucasdebeve.github.io/testMkDocs/blog/posts/hello-world%20copy/</loc>
-         <lastmod>2024-03-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://lucasdebeve.github.io/testMkDocs/blog/posts/hello-world/</loc>
-         <lastmod>2024-03-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://lucasdebeve.github.io/testMkDocs/tags/</loc>
          <lastmod>2024-03-21</lastmod>
          <changefreq>daily</changefreq>
