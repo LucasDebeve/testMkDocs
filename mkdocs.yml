@@ -1,0 +1,87 @@
+site_name: Pantheon
+site_description: A modern and minimalist theme for MkDocs
+site_author: Lucas Debeve
+site_url: https://lucasdebeve.github.io/pantheon/
+theme:
+  name: material
+  language: fr
+  favicon: assets/favicon.ico
+  features:
+    - content.code.annotate
+    - content.code.autoheader
+    - content.code.copy
+    - content.code.tabbed
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+  palette:
+    - media: "screen and (prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        color: amber
+        name: Switch to dark mode
+    - media: "screen and (prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        color: amber
+        name: Switch to light mode
+extra:
+  generator: false
+  consent:
+    title: Cookies & Privacy
+    description: This website uses cookies to ensure you get the best experience on our website.
+    actions:
+      - accept
+      - reject
+      - manage
+copyright: Copyright &copy; 2024 Lucas Debeve
+markdown_extensions: 
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.tasklist
+  - pymdownx.tilde
+  - pymdownx.caret
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins: 
+  - search
+  - tags:
+      tags_file: tags.md
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      date_format: '%Y-%m-%d'
+      categories:
+        - categories
+        - tags
