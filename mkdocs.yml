@@ -1,7 +1,7 @@
 site_name: Pantheon
 site_description: A modern and minimalist theme for MkDocs
 site_author: Lucas Debeve
-site_url: https://lucasdebeve.github.io/pantheon/
+site_url: https://lucasdebeve.github.io/testMkDocs/
 theme:
   name: material
   language: fr
@@ -77,11 +77,13 @@ plugins:
   - search
   - tags:
       tags_file: tags.md
-  - rss:
-      match_path: blog/posts/.*
-      date_from_meta:
-        as_creation: date
-      date_format: '%Y-%m-%d'
-      categories:
-        - categories
-        - tags
+  - blog:
+      blog_dir: .
+      post_date_format: medium
+      authors_file: "{blog}/.authors.yml"
+      categories_name: Thèmes
+      archive_name: Tous les cours
+      pagination_per_page: 10
+      pagination_if_single_page: true
+      draft_if_future_date: true
+
